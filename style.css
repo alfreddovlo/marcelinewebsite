@@ -1,0 +1,396 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    width: 100%;
+    min-width: 100vh;
+    background-image:url(bakeryimg/banner.JPG);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+
+/*---- this css is for other pages apart from HOME---*/
+.pages{
+    width: 100%;
+    min-width: 40vh;
+    background-image: url(bakeryimg/banner.JPG);
+    background-size: 2px;
+    background-position: center;
+    position: relative;
+    margin-top: 20px;
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+nav{
+    display: flex;
+    padding: 5% 6% 25%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 8px 6px;
+    display: inline-block;
+    position: relative;
+    color: red;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav img{
+    width: 100px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: red;
+    margin: auto;
+    display: block;
+    transition: 2s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.textbox{
+    text-align: center;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.textbox h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.textbox p{
+    font-size: 1em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.btn{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    position: relative;
+    background: none;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: red;
+    color: #e6dede;
+    border: 2px solid rgb(248, 246, 246);
+    transition: 0.7s;
+    box-shadow: 2px 2px 5px rgba(22, 22, 22, 0.2);
+}
+
+.fa-solid.fa-square-xmark{
+    display: none;
+}
+
+.fa-solid.fa-bars{
+    display: none;
+}
+
+
+/*--Mobile view--*/
+@media (max-width: 768px){
+    .textbox h1{
+        font-size: 0.9em;
+    }
+
+    .textbox p{
+        font-size: 0.6em;
+    }
+    
+    nav ul li{
+        display: block;
+    }
+
+    .navLinks{
+        display: none;
+        position: absolute;
+        top: 0%;
+        right: 50px;
+        background-color: rgb(19, 79, 102);
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+        z-index: 2px;
+    }
+
+    .fa-solid.fa-square-xmark{
+        display: block;
+        color: #e6dede;
+        cursor: pointer;
+    }
+
+    .fa-solid.fa-bars{
+        display: block;
+        color:  #e6dede;
+        cursor: pointer;
+    }
+}
+
+
+/*--Food List--*/
+.foods{
+    width: 80%;
+    padding: 100px;
+    background-color: #e6c86e;
+    text-align: center;
+    margin: auto;
+}
+
+.foods h1{
+    font-size: 40px;
+    font-weight: 600px;
+}
+
+.foods h3{
+    color:rgb(8, 8, 8);
+}
+
+
+.p{
+    font-weight: 15px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.foodsCol{
+    background-color: white;
+    border-radius: 10px; 
+    padding: 20px 10px;
+    box-sizing: border-box;
+    flex-basis: 30%;
+}
+
+
+/*--Dish list--*/
+.dish{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(241, 231, 231);
+}
+
+.row{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dishCol{
+    flex-basis: 31%;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom:5% ;
+    overflow: hidden;
+}
+
+.dishCol img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.dishCol h3{
+    text-align: center;
+}
+
+
+
+/*--Facility--*/
+.facilityCol img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin: auto;
+    padding: 0px;
+}
+
+.facilityCol h1{
+    text-align: center;
+}
+
+.facility{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 0px;
+    background-color: rgb(156, 101, 34);
+}
+.facility h1{
+    color: white;
+}
+.facility h2{
+    color: white;
+}
+
+
+
+/*--Contact--*/
+.contactForm{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+    background-color: rgb(240, 234, 234);
+    text-align: center;
+}
+
+
+.contactForm .contactCol{
+    flex-basis: 30%;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.contactCol div{
+    display: flex;
+}
+
+.contactCol.row{
+    color: black;
+}
+
+.contactCol .input.contactCol textarea{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom:10px ;
+    outline: none;
+}
+
+.contactCol button{
+    padding: 15px 30px;
+    background-color: rgb(248, 36, 36);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.5s;
+}
+.map{
+    width: 100vh;
+    margin: auto;
+    padding: 80px;
+}
+
+.video{
+    width: 100vh;
+    margin: auto;
+    padding: 80px;
+}
+
+
+
+/*----footer---*/
+.footer{
+    background-image:linear-gradient(rgba(12, 1, 1, 0.7), rgba(5, 5, 5, 0.7)) ,url('bakeryimg/banner.JPG');
+    color:white ;
+    padding: 30px 0px;
+    text-align: center;
+}
+.footer h3{
+    font-size: 17px;
+}
+
+.socials{
+    font-size: 5px; 
+}
+
+.fa-brands{
+    color: white;
+}
+
+
+/*--- mobile view --*/
+@media(max-width: 768px){
+
+    .row{
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .foodsCol{
+        flex-basis: 100%;
+        margin-bottom: 10%;
+    }
+    .dish{
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .facilities{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .contactForm{
+        padding: 10px;
+        text-align: center;
+    }
+    .contactCol{
+        margin-bottom: 20px;
+    }
+    .contactCol .input.contactCol textarea{
+        width: 100%;
+    }
+    .contactCol button{
+        padding: 10px 20px;
+    }
+    .footer{
+        padding: 10px;
+    }
+    .fab{
+        color: white;
+    }
+    .map{
+        padding: 10px;
+    }
+    .video{
+        padding: 10px;
+    }
+    
+}
