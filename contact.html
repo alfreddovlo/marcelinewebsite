@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> marcelineSite</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e4a9ef781c.js" crossorigin="anonymous"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "QHo7aLQK9Qn9efZWG",
+            });
+        })();
+        </script>
+        <script src="js.js"></script>
+    </head>
+    <body>
+     <section class="header">
+        <nav class="nav"> 
+            <img src="bakeryimg/logo.JPG" alt="logo">
+         <div class="navLinks" id="navLinks">
+            <i class="fa-solid fa-square-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="textbox">
+            <h1>Contact Us </h1>
+        </div>
+    </section>
+
+
+     <!--Contact-->
+     <section class="contactForm">
+        <h3>Youtube Video</h3>
+        <div class="video">
+             <iframe width="600" height="315" src="https://www.youtube.com/embed/4ACzGjziMFk?si=GjwcjvTxPgZjeGIq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>allowfullscreen>
+            </iframe>        
+        </div>
+
+
+        <h3>Find Us Here</h3>
+        <div class="map">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31763.774761155735!2d-0.17500566044926205!3d5.644658099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9be968b96057%3A0x9cc4f68290635b98!2sSoul%20Restaurant%20and%20Bar%20East%20Legon!5e0!3m2!1sen!2sgh!4v1740702366491!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>"
+        </div>
+        </div>
+
+        <div class="contactCol">
+            <i class="fa-solid fa-house"></i>
+            <span>
+                <h3>East View Building</h3>
+                <p>
+                    East-Legon,<br>
+                    P.O.Box 1235.<br>
+                    Accra-Ghana.
+                </p>
+            </span>
+        </div>
+
+        <div class="contactCol">
+            <i class="fa-solid fa-phone"></i>
+            <span>
+                <h3>(+233)20-880-6797</h3>
+                <p>Monday-Friday, 6am-11pm</p>
+            </span>
+        </div>
+
+
+        <div class="contactCol">
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+                <h3>Email Us : alfreddovlo360@gmail.com</h3>
+            </span>
+        </div>
+
+        <div class="contactCol">
+        <form action="">
+            <input type="text" id="name" name="name" placeholder=" Enter your name" required>
+            <input type="email" id="email" name="email"  placeholder=" Enter your email" required><br>
+            <textarea placeholder="Message" id="message" cols="50" rows="5" name="message" messagen="message" required></textarea><br>
+            <button type="submit" onclick="send()">Submit</button>
+        </form>
+        </div>
+    </section>
+
+
+    <!--start footer-->
+    <section class="footer">
+        <p> &copy;2025 Marceline r&b. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter fa-5x"></i>
+            </a>
+            <a href="https://youtube.com">
+                <i class="fa-brands fa-youtube fa-5x"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram fa-5x"></i>
+            </a>
+            <p>@marceline_r&b</p>
+        </div>
+    </section>
+<!--end footer-->
+
+
+<script>
+    var menu = document.getElementById("navLinks");
+    if (window.matchMedia("(min-width: 700px)").matches){
+        menu.style.display = "block"; // Show menu
+    } 
+    else {
+        menu.style.display = "none"; // Hide menu
+    }
+
+
+    function showMenu() {
+        document.querySelector('.navLinks').style.display = 'block';
+    }
+    function hideMenu() {
+        document.querySelector('.navLinks').style.display = 'none';
+    }
+</script>
+
+
+    </body>
+</html>
+
