@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Marceline Bakery</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e4a9ef781c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+     <section class="header">
+        <nav class="nav"> 
+            <img src="bakeryimg/logo.JPG" alt="logo">
+         <div class="navLinks" id="navLinks">
+            <i class="fa-solid fa-square-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html"class="active"></a>About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="textbox">
+            <h1>Experience Us </h1>
+        </div>
+    </section>
+
+    <section class="facility">
+        <div class="row">
+            <div class="facilityCol">
+                <img src="bakeryimg/snooker.JPG" alt="snooker">
+                <h2>Snooker Spot</h2>
+            </div>
+        
+        <div class="facilityCol">
+            <img src="bakeryimg/setting.JPG" alt="setting">
+            <h2>Executive Lounge</h2>
+        </div>
+
+        <div class="facilityCol">
+            <img src="bakeryimg/dine.JPG" alt="dine">
+            <h2>Dinning Setting</h2>
+      </div>
+     </div>
+    </section>
+
+
+<section class="youtube">
+    <div class="row">
+        <div class="youtubeCol">
+            <iframe width="440" height="315" src="https://www.youtube.com/embed/QIZptctePk8?si=zrwn3Q3BhY3NRnJl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    
+    <div class="youtubeCol">
+        <iframe width="440" height="315" src="https://www.youtube.com/embed/78z9wfm-Gtg?si=It9wZh2adhW1yFsl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="youtubeCol">
+        <iframe width="440" height="315" src="https://www.youtube.com/embed/GZG8ivsc2GM?si=rksbEWtfKg4wnlp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+ </div>
+</section>
+
+    <section>
+        <div class="news">
+            <h3>- NEWS FEED ON CHEF MARCELINE -</h3>
+            <p> Marceline Resturant & Bakery was founded by a professional chef called Chef A.D Marceline since 1999 and has always been reputable and famous for its continental meals and the people who dinne here.
+                The resturant and bakery has been recognized all over the world from Europe, Asia, South America and Africa with its amazing meals.
+                The resturant was awarded in Miami (USA) in 2000, 2006, 2014 & 2023 as the best resturant of the year at the "A.B.R.O.Y Awards" and Chef Marceline was picked famously to serve both former President Barack Obama & President Joe Biden of the United State of America.
+            </p>
+            <br>
+            <div class="container">
+                <div class="text">
+            <h3>BRANCHES</h3>
+            <P>Marc. resturants has been able to stamp its authority across cities like; </P> 
+            <ul>     
+                <li>Miami-(USA)</li>
+                <li>Milan-(Italy)</li>
+                <li>Madrid-(Spain)</li>
+                <li>London-(UK)</li>
+                <li>Paris-(France)</li>
+                <li>Acapulco-(Mexico)</li>
+                <li>Antwerp-(Beligum)</li>
+                <li>Berline-(Germany)</li>
+                <li>Bogota-(Brazil)</li>
+                <li>Accra-(Ghana)</li>
+                <li>Lagos-(Nigeria)</li>
+                <li>Casablanca-(Morrocco)</li>
+                <li>CapeTown-(South Africa)</li>
+                <li>San Juan-(Argentina)</li>
+                <li>Lisbon-(Portugal)</li>
+                <li>Tokyo-(Japan)</li>
+            </ul> 
+            </div>
+                <div class="image">
+                <img src="bakeryimg/chef.JPG" alt="chef" width="650">
+                <h3>Chef Alexandra .D. Marceline</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--start footer-->
+    <section class="footer">
+        <h4> &copy;2025 Marceline r&b. All rights reserved.<h4>
+        <div class="socials">
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter fa-5x"></i>
+            </a>
+            <a href="https://youtube.com">
+                <i class="fa-brands fa-youtube fa-5x"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram fa-5x"></i>
+            </a>
+            <h5>@marceline_r&b<h5>
+        </div>
+    </section>
+<!--end footer-->
+
+
+<script>
+    var menu = document.getElementById("navLinks");
+    if (window.matchMedia("(min-width: 700px)").matches){
+        menu.style.display = "block"; // Show menu
+    } 
+    else {
+        menu.style.display = "none"; // Hide menu
+    }
+
+
+    function showMenu() {
+        document.querySelector('.navLinks').style.display = 'block';
+    }
+    function hideMenu() {
+        document.querySelector('.navLinks').style.display = 'none';
+    }
+</script>
+
+
+    </body>
+</html>
+
